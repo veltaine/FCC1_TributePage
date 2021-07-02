@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Lato');
+
+#main {
+/*   background-image:url(https://i.imgur.com/3KHwh6B.jpg); */
+  background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.desktopbackground.org%2Fdownload%2Fo%2F2010%2F04%2F26%2F7772_smb1-nes-hills-long-backgrounds-pack-super-mario-bros-x-forums_1600x800_h.gif&f=1&nofb=1);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+}
+
+.header {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 5px;
+  height: auto;
+
+  border-radius: 100px;
+}
+
+/* Nintendo style Title */
+#tribute-info {
+  font-family: 'Press Start 2P', serif;
+  max-width: 100%;
+  height: auto;
+  font-size: 18px;
+  border-width: thick;
+  text-shadow: 1px 1px rgb(254, 0, 22);
+  border-color: rgb(254, 0, 22);
+  border-style: solid;
+  border-radius: 100px;
+  padding: 10px;
+  background-color: white;
+  opacity: .8;
+
+  }     
+
+.figure, img {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    border: solid red 4px;
+    border-radius: 20px;
+    max-width: 100%;
+
+  }
+
+figcaption {
+  display: block;
+  text-align: center;
+}
+
+#funFacts {
+  text-align: center;
+  font-family: 'Press Start 2P', serif;
+  font-size: 18px;
+  border-width: thick;
+  text-shadow: 1px 1px rgb(254, 0, 22);
+  border-color: rgb(254, 0, 22);
+  border-style: solid;
+  border-radius: 100px;
+  padding: 10px;
+  background-color: white;
+  opacity: .8;
+}
+
+
+#main {
+  background-color: rgba(0, 0, 0, 0.175);
+  margin: 0 auto;
+  overflow: auto;
+}
+/* @media handheld, only screen and (max-width: 767px) {
+ /* mobile version css, modify so there's different dimensions 
+  }  As of now, has no functionality in the project*/
+
+
+.timeline {
+    /* the main timeline structure? */
+  list-style: none;
+  padding: 20px 0 20px;
+  position: relative;
+ 
+} 
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: .05%;
+  background-color: #eeeeee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+
+.timelineHeading {
+  border-radius: 30px;
+  text-align: center;
+
+}
+
+.timelineHeadingInverted {
+  border-radius: 30px;
+  text-align: center;
+}
+
+/* The Timeline Panels */
+.timelinePanel {
+  max-width: 50%;
+  max-height: 50%;
+  border: 3px solid rgb(230, 0, 18);
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  -webkit-box-shadow: 0 1px 10px rgba(17, 7, 155, 0.2);
+  box-shadow: 0 1px 20px  rgba(0, 0, 0, 0.175); 
+  background-color: white;
+  opacity: .75;
+
+
+}
+
+/* left panels */
+li {
+  padding-right: -100px;
+  position: relative;
+  width: auto;
+}
+
+li:after {
+  clear: both;
+}
+
+/* timeline stagger design */
+li:before,
+li:after {
+  content: " ";
+  display: table;
+}
+
+li:after {
+  clear: both;
+}
+
+/* pushes the left panels to avoid overlapping the buttons */
+.timeline > li:not(.timelineInverted) {
+padding-right:100px;
+}
+
+.timeline > li.timelineInverted {
+padding-left:90px;
+}
+
+.timeline > li > .timelinePanel:before {
+  position: absolute;
+  top: 26px;
+  right: -15px;
+  display: inline-block;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  content: " ";
+}
+
+.timelinePanel:after {
+  position: absolute;
+  top: 27px;
+  right: -14px;
+  display: inline-block;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  content: " ";
+}
+
+#timelineBadge {
+  color: rgb(230, 0, 18);
+  width: 1%;
+  height: 45px;
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  margin-top: 15px;
+  margin-left: -25px;
+  z-index: 100;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+/* Right side timeline panels */
+.timeline > li.timelineInverted > .timelinePanel {
+  float: right;
+}
+
+/* Timeline Layout */
+.timelinePanel:before {
+  border-left-width: 0;
+  border-right-width: 12%;
+  left: -15px;
+  right: auto;
+}
+
+.timelinePanel:after {
+  border-left-width: 0;
+  border-right-width: 14%;
+  left: -14px;
+  right: auto;
+}
+
+p {
+    font-family: 'Press Start 2P', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #0084ff;
+    text-shadow: 1px 1px rgb(255, 255, 255);
+    display: inline-flex;
+  }
+
+
+
+#timelineSubTitle {
+  font-family: 'Press Start 2P', serif;
+  font-size: 12px;
+  border-width: 2px;
+  color: #ffffff;
+  text-shadow: 2px 2px rgb(0, 0, 10);
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-radius: 50px;
+  border-spacing: 50px 100px;
+  background-color: rgb(254, 0, 22);
+  padding: 15px;
+  }  
+  
+#timelineButton {
+    background-color: #ff0016; /* Nintendo Red */
+    border: solid;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Press Start 2P', serif;
+    font-size: 16px;
+    border-radius: 50%;
+    box-shadow: 0 5px #000;
+}
+
+/* Creates a hover effect over the buttons, not necessary for this project but keeping to reference to */
+/* #timelineButton:hover {background-color: #000000} */
+
+/* Creates a button press effect */
+#timelineButton:active {
+  background-color: #ff0016;
+  box-shadow: 0 5px #000;
+  transform: translateY(4px);
+}
+
+padded-click {
+  position: relative; 
+}
+
+padded-click:after {
+  padding: 50px;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Footer Design */
+footer {
+  background-color: rgb(0, 22, 117);
+  text-align: center;
+}
+footer > p {
+  color: #ccc;
+}
