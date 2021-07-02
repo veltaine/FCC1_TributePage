@@ -39,14 +39,23 @@
     display: block;
     margin: 0 auto;
     height: auto;
-    border: solid red 4px;
+    border: solid rgb(254, 0, 22) 4px;
     border-radius: 20px;
+    width: 100%;
     max-width: 100%;
 
   }
 
 figcaption {
-  display: block;
+  display: inline-block;
+  background-color: #ffffff;
+  align-items: center;
+  border: 2px solid rgb(254, 0, 22);
+  border-radius: 2rem;
+  max-width: 100%;
+}
+
+figcaption > p {
   text-align: center;
 }
 
@@ -279,5 +288,12 @@ footer {
   text-align: center;
 }
 footer > p {
-  color: #ccc;
+  color: rgb(0, 153, 0);
+}
+a:link {
+  color: rgb(255, 0, 0);
+  text-shadow: 1px 1px #686868;
+}
+a:visited {
+  color: #880404;
 }
